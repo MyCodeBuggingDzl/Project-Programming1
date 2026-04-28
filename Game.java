@@ -29,6 +29,7 @@ public class Game
        this.platform = platform;
        this.genre = genre;
        this.releaseDate = releaseDate;
+       avgRating = new double[5];
     }
     
     public String name() //gets game name
@@ -40,4 +41,25 @@ public class Game
     {
         return gameID;
     }
+    
+    public double getAvgRating() //gets avgRAting
+    {
+        double sum = 0;
+        
+        for(double rating: avgRating){
+            if(rating > 0){
+                sum += rating;
+            }
+        }
+        return sum/avgRating.length; 
+    }
+    
+    public void addRating(int i, double rating)// add rating to game
+    {                     //store rate, rating
+        if(i >= 0 && i < avgRating.length){
+            avgRating[i] = rating;
+        }
+    }
+    
+    
 }
