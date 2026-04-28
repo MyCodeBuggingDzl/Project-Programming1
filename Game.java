@@ -9,43 +9,35 @@ public class Game
 {
     // instance variables - replace the example below with your own
     private int gameID; 
-    private String gameName;
+    private String name;
     private double[] avgRating;
-    private avgRating rating;
-    private gameGenre genre;
-    private gamePlatform platform;
+    private String releaseDate;
+    
+    private genre genre;
+    private platform platform;
+    private ageRating ageRating;
     
     /**
      * Constructor for objects of class Game
-     */
-    public Game()
+     */         //create game
+    public Game(String name, int gameID, ageRating ageRating, platform platform,
+               genre genre, String releaseDate )
     {
-       
+       this.name = name;
+       this.gameID = gameID;
+       this.ageRating = ageRating;
+       this.platform = platform;
+       this.genre = genre;
+       this.releaseDate = releaseDate;
     }
     
-    public enum avgRating
+    public String name() //gets game name
     {
-        CHILD, TEEN, MATURE
+       return name; 
     }
     
-    public enum gameGenre
+    public int gameID() // gets gameID
     {
-        ACTION, STRATEGY, GAMBLING, ADVENTURE, STORY, RPG
-    }
-    
-    public enum gamePlatform
-    {
-        PC, CONSOLE, MOBILE
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public void sampleMethod(int y)
-    {
-        
+        return gameID;
     }
 }
