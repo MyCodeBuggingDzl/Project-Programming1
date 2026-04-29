@@ -45,13 +45,14 @@ public class Game
     public double getAvgRating() //gets avgRAting
     {
         double sum = 0;
-        
+        int count = 0;
         for(double rating: avgRating){
             if(rating > 0){
                 sum += rating;
+                count++;
             }
         }
-        return sum/avgRating.length; 
+        return sum/count; 
     }
     
     public void addRating(int i, double rating)// add rating to game
@@ -61,5 +62,8 @@ public class Game
         }
     }
     
-    
+    public void printReleaseDate()  //get release date
+    {
+        System.out.println(releaseDate);
+    }
 }
