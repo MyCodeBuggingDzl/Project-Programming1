@@ -6,7 +6,4 @@ all they need to know. The comments should usually include at least:
 
 PROJECT TITLE: Game Library
 PURPOSE OF PROJECT: Model a digital game library 
-VERSION or DATE: 4/28/2026
-HOW TO START THIS PROJECT:
-AUTHORS: 
-USER INSTRUCTIONS:
+VERSION or DATE: 4/29/2026

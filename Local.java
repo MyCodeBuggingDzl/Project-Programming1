@@ -5,18 +5,19 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Local //extends game
+public class Local extends Multiplayer
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private boolean isLAN;
 
     /**
      * Constructor for objects of class Local
      */
-    public Local()
+    public Local(String name, int gameID, ageRating ageRating, platform platform,
+               genre genre, String releaseDate, boolean isLAN )
     {
-        // initialise instance variables
-        x = 0;
+        super(name, gameID, ageRating, platform,genre, releaseDate);
+        this.isLAN = isLAN;
     }
 
     /**
@@ -25,9 +26,8 @@ public class Local //extends game
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public boolean sampleMethod()
     {
-        // put your code here
-        return x + y;
+       return isLAN;
     }
 }

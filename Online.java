@@ -5,18 +5,19 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Online //extends Game
+public class Online extends Multiplayer
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String serverName;
 
     /**
      * Constructor for objects of class Online
      */
-    public Online()
+    public Online(String name, int gameID, ageRating ageRating, platform platform,
+               genre genre, String releaseDate, String serverName )
     {
-        // initialise instance variables
-        x = 0;
+        super(name, gameID, ageRating, platform,genre, releaseDate);
+        this.serverName = serverName;
     }
 
     /**
@@ -25,9 +26,9 @@ public class Online //extends Game
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public String getServerName()
     {
-        // put your code here
-        return x + y;
+        return serverName;
     }
+    
 }
