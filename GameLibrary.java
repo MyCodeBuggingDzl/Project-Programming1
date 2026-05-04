@@ -3,7 +3,7 @@ import java.util.ArrayList;
 /**
  * Write a description of class GameLibrary here.
  *
- * @author (your name)
+ * @Denzel
  * @version (a version number or a date)
  */
 public class GameLibrary
@@ -38,4 +38,27 @@ public class GameLibrary
             System.out.println(g);
         }
     }
+    
+    public Game findGame(int id) //finds game with ID
+    {
+        for(Game g : games){
+            if(g.gameID() == id){
+                return g;
+            }
+        }
+        return null;
+    }
+    
+    public Game findGameName(String name) //find game by name
+    {
+        for(Game g : games){
+            if(g.name().equalsIgnoreCase(name)){
+                return g;
+            }
+        }
+        return null;
+    }
+    
+    // must add show avg rating using gameID
+    //add rating 
 }
