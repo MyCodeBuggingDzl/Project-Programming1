@@ -66,4 +66,19 @@ public class Game
     {
         System.out.println(releaseDate);
     }
+    
+    public void printGenre()
+    {
+        System.out.println(genre);
+    }
+    
+    public void printAgeRating()
+    {
+        System.out.println(ageRating);
+    }
+    
+    public void printPlatform()
+    {
+        System.out.println(platform);
+    }
 }
