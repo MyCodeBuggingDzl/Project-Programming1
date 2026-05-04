@@ -2,7 +2,7 @@
 /**
  * Write a description of class Online here.
  *
- * @author (your name)
+ * @Jordan
  * @version (a version number or a date)
  */
 public class Online extends Multiplayer

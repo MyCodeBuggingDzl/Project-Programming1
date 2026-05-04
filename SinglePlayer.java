@@ -2,7 +2,7 @@
 /**
  * Write a description of class SinglePlayer here.
  *
- * @author (your name)
+ * @Denzel
  * @version (a version number or a date)
  */
 public class SinglePlayer extends Game

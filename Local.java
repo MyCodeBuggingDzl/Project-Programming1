@@ -2,7 +2,7 @@
 /**
  * Write a description of class Local here.
  *
- * @author (your name)
+ * @Jordan
  * @version (a version number or a date)
  */
 public class Local extends Multiplayer

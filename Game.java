@@ -2,7 +2,7 @@
 /**
  * Write a description of class Game here.
  *
- * @author (your name)
+ * @Denzel
  * @version (a version number or a date)
  */
 public class Game
