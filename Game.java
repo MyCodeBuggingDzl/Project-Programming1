@@ -81,4 +81,16 @@ public class Game
     {
         System.out.println(platform);
     }
+    
+    @Override
+    public String toString()
+    {
+        return "Name: " + name +
+           " | ID: " + gameID +
+           " | Genre: " + genre +
+           " | Platform: " + platform +
+           " | Age Rating: " + ageRating +
+           " | Release Date: " + releaseDate +
+           " | Average Rating: " + getAvgRating();
+    }
 }
