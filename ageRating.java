@@ -7,5 +7,5 @@
  */
 public enum ageRating
 {
-    CHILD, TEEN, MATURE
+    CHILD, TEEN, MATURE, EVERYONE
 }

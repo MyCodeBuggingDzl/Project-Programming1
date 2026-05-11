@@ -7,5 +7,5 @@
  */
 public enum platform
 {
-    PC, CONSOLE, MOBILE
+    PC, CONSOLE, MOBILE, NINTENDO, PLAYSTATION, XBOX
 }
