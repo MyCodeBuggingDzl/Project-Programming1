@@ -9,12 +9,12 @@ public class SinglePlayer extends Game
 {
     // instance variables - replace the example below with your own
     private boolean storyMode;
-    private double gameDuration;
+    private int gameDuration; // minutes 120 = 2 hours
     /**
      * Constructor for objects of class SinglePlayer
      */
     public SinglePlayer(String name, int gameID, ageRating ageRating, platform platform,
-    genre genre, String releaseDate , boolean storyMode, double gameDuration)
+    genre genre, String releaseDate , boolean storyMode, int gameDuration)
     {
         // initialise instance variables
         super(name, gameID, ageRating, platform,genre, releaseDate);

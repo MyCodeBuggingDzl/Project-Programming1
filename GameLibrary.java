@@ -58,7 +58,25 @@ public class GameLibrary
         }
         return null;
     }
+    public void rateGame(int id, int index, double rating)
+    {
+        Game g = findGame(id); 
+        if (g !=null ){
+            g.addRating(index, rating);   
+        }
+        else
+        {
+            System.out.println ("Not Found");
+        }
+    }
     
-    // must add show avg rating using gameID
-    //add rating 
+    public static void main(String[] args)
+    {
+         GameLibrary lib = new GameLibrary();
+         Game g1 = new Game ("draw.io",1, ageRating.TEEN, platform.PC, genre.ADVENTURE, "2011");
+         
+         lib.addGame(g1);
+         lib.printAllGame();
+         lib.rateGame(1,0,4.5);
+    }
 }
