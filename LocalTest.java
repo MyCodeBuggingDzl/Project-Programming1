@@ -28,6 +28,7 @@ public class LocalTest
     @BeforeEach
     public void setUp()
     {
+        Game g1 = new Game ("hole.io",1, ageRating.TEEN, platform.PC, genre.ADVENTURE, "2011");
     }
 
     /**
@@ -39,4 +40,11 @@ public class LocalTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void test()
+    {
+        GameLibrary gameLibr1 = new GameLibrary();
+    }
 }
+

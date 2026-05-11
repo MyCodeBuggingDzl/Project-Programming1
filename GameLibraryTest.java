@@ -39,4 +39,18 @@ public class GameLibraryTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void gamelib()
+    {
+        Local local1 = new Local("a", 1, ageRating.TEEN, platform.PC, genre.RPG, "2000", true);
+        GameLibrary gameLibr1 = new GameLibrary();
+        assertEquals("a", local1.name());
+        local1.printAgeRating();
+        local1.printGenre();
+        assertEquals(1, gameLibr1.findGame(1));
+        Local local2 = new Local("a", 2, ageRating.MATURE, platform.PC, genre.RPG, "2026", true);
+        assertEquals("a", local2.toString());
+        gameLibr1.addGame(local2);
+    }
 }
