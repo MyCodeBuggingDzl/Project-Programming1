@@ -42,7 +42,7 @@ public class Game
         return gameID;
     }
     
-    public double getAvgRating() //gets avgRAting
+    public double getAvgRating() //gets avgRAting MUST FIX
     {
         double sum = 0;
         int count = 0;
